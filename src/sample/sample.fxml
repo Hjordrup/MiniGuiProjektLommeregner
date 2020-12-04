@@ -1,0 +1,62 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox alignment="TOP_CENTER" spacing="10" prefHeight="300" prefWidth="300" fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" >
+
+    <StackPane alignment="TOP_CENTER">
+        <Rectangle fill="TRANSPARENT" stroke="Black" width="250" height="50" />
+        <Text fx:id="screen" />
+    </StackPane>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button style="-fx-border-color: black; " text="Kvrod" prefWidth="50" onAction="#kvrodPress"/>
+        <Button style="-fx-border-color: black; " text="x^2" prefWidth="50" onAction="#x2Press"/>
+        <Button style="-fx-border-color: black; " text="x^x" prefWidth="50" onAction="#operandPres"/>
+        <Button style="-fx-border-color: black; " text="PI" prefWidth="50" onAction="#numpadPres"/>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button style="-fx-border-color: black; -fx-underline: true" text="7" prefWidth="50" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; -fx-underline: true" text="8" prefWidth="50" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; -fx-underline: true" text="9" prefWidth="50" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; " text="/" prefWidth="50" onAction="#operandPres"/>
+
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button style="-fx-border-color: black; -fx-underline: true" text="4" prefWidth="50" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; -fx-underline: true" text="5" prefWidth="50" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; -fx-underline: true" text="6" prefWidth="50" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; " text="*" prefWidth="50" onAction="#operandPres"/>
+
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button style="-fx-border-color: black; -fx-underline: true" text="1" prefWidth="50" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; -fx-underline: true" text="2" prefWidth="50" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; -fx-underline: true" text="3" prefWidth="50" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; " text="-" prefWidth="50" onAction="#operandPres"/>
+
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button style="-fx-border-color: black; -fx-underline: true" text="0" prefWidth="110" onAction="#numpadPres"/>
+        <Button style="-fx-border-color: black; " text="=" prefWidth="50" onAction="#operandPres"/>
+        <Button style="-fx-border-color: black; " text="+" prefWidth="50" onAction="#operandPres"/>
+
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+    <Button style="-fx-border-color: black; " text="Clear" prefWidth="170" onAction="#clearPress"/>
+        <Button style="-fx-border-color: black; " text="." prefWidth="50" onAction="#numpadPres"/>
+
+</HBox>
+
+</VBox>
